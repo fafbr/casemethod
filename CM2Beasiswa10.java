@@ -1,7 +1,6 @@
 // Nama : Fafa Febriansa
 // Kelas: 1B
 // Absen: 10
-
 import java.util.Scanner;
 public class CM2Beasiswa10 {
     static Scanner sc = new Scanner(System.in);
