@@ -10,7 +10,6 @@ public class CM2Beasiswa10 {
     // kolom: 0=Nama, 1=NIM, 2=IPK, 3=jenis, 4=penghasilan
     static String[][] data = new String[max][5];
     static int jml = 0;
-
     // untuk fungsi menampilkan menu
     public static void menu() {
         System.out.println("=== Sistem Pendaftaran Beasiswa ===");
