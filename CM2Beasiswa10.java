@@ -38,7 +38,6 @@ public class CM2Beasiswa10 {
         int penghasilan = Integer.parseInt(penghasilanStr);
         data[jml][4] = String.valueOf(penghasilan);
 
-
         // mengecek validasi jenis beasiswa
         if (!(data[jml][3].equalsIgnoreCase("Reguler") ||
             data[jml][3].equalsIgnoreCase("Unggulan") || 
