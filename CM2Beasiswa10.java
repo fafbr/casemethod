@@ -4,13 +4,13 @@
 import java.util.Scanner;
 public class CM2Beasiswa10 {
     static Scanner sc = new Scanner(System.in);
-    // Kapasitas maksimal
-    static final int max = 100;
+    // Kapasitas maksimal 100
     // kolom: 0=Nama, 1=NIM, 2=IPK, 3=jenis, 4=penghasilan
-    static String[][] data = new String[max][5];
+    static String[][] data = new String[100][5];
     static int jml = 0;
     // untuk fungsi menampilkan menu
     public static void menu() {
+        System.out.println();
         System.out.println("=== Sistem Pendaftaran Beasiswa ===");
         System.out.println("1. Tambah Data Pendaftar Beasiswa");
         System.out.println("2. Tampilkan Semua Pendaftar");
@@ -19,7 +19,7 @@ public class CM2Beasiswa10 {
         System.out.println("5. Keluar");
         System.out.print("Pilih menu (1-5): ");
     }
-
+    
     // untuk fungsi menambahkan data
     public static void tambahData() {
         System.out.print("Nama Mahasiswa: ");
@@ -27,9 +27,7 @@ public class CM2Beasiswa10 {
         System.out.print("NIM: ");
         data[jml][1] = sc.nextLine();
         System.out.print("IPK Terakhir: ");
-        String ipkStr = sc.nextLine();
-        double ipk = Double.parseDouble(ipkStr);
-        data[jml][2] = String.valueOf(ipk);
+        data[jml][2] = sc.nextLine();
         System.out.print("Jenis Beasiswa (Reguler/Unggulan/Riset): ");
         data[jml][3] = sc.nextLine();
         System.out.print("Penghasilan Orang Tua (maksimal Rp 2.000.000): ");
@@ -67,7 +65,7 @@ public class CM2Beasiswa10 {
         }
     }
 
-    // untuk fungsi menampilkan jenis beasiswa  
+    // untuk fungsi menampilkan pendaftar sesuai jenis beasiswa  
     public static void cari() {
         System.out.print("Masukkan jenis beasiswa: ");
         String jenis = sc.nextLine();
